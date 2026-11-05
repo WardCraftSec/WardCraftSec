@@ -1,48 +1,46 @@
+# Kim (WardCraftSec)
 
-# ᚹᚫᚱᛞᚲᚱᚫᚠᛏᛋᛖᚲ
+**Junior blue team analyst. Self-taught. Building everything from a Pixel 7 on GrapheneOS in Termux.**
 
-> *"The rune is sent. The ward is cast. The network is secured."*
-
-🛡️ Blue team operator in training.
-🔮 Ancient runes × modern syntax. UK.
-
-## The Arsenal
-
-| Tool | Role |
-|------|------|
-| NextDNS + Zeek | The Oracle (log analysis) |
-| Python / Bash | The Casting Script |
-| Sigma / YARA | The Runes of Detection |
-| MITRE ATT&CK | The Enemy's Spellbook |
-| Nmap / Wireshark | Scrying (recon & analysis) |
-
-## Current Quests
-
-- [x] GrapheneOS home stack (3 months, 5 profiles, daily log review)
-- [x] Local LLM on mobile (Qwen 3 1.7B, Termux, Ollama)
-- [ ] First ward script (Python, IOC enrichment)
-- [ ] Home lab SIEM (Wazuh)
-- [ ] Security+ exam (target: Q1 2027)
-- [ ] SOC Tier 1 role (target: Q2 2027)
-
-## The Codex
-
-| Date | Title | Link |
-|------|-------|------|
-| Oct 2026 | GrapheneOS Home Stack | [→](https://github.com/wardcraftsec/wardcraft/tree/main/codex/01-grapheneos-stack) |
-
-## Philosophy
-
-Runes weren't just letters. They were **wards** — symbols that held
-protective power when written in the right order.
-
-Detection rules are the same. A Sigma rule isn't just a query.
-It's a ward cast against a specific threat. The log stream is the
-rune-stone. I'm learning to read it.
+Seeking: Junior SOC / TI roles, UK.
 
 ---
 
-### The Work
+## Projects
 
-All scripts, write-ups, and detection rules live in
-[**wardcraft**](https://github.com/wardcraftsec/wardcraft).   
+| Project | What | Status |
+|---------|------|--------|
+| [Save Me](https://wardcraftsec.github.io/Save-Me/) | Free PWA: guided NextDNS setup + IOC triage (AbuseIPDB, VirusTotal, ipinfo) | ✅ Live |
+| [WardCraft](https://github.com/WardCraftSec/wardcraft) | Blue team scripts, Sigma rules, codex entries, shift-handover docs | 🔄 Active |
+
+---
+
+## Stack
+
+| Area | Tools / Tech |
+|------|-------------|
+| OS | GrapheneOS (Pixel 7), Termux |
+| Languages | Python 3.11+ |
+| Detection | Sigma, AbuseIPDB, VirusTotal, ipinfo |
+| DNS | NextDNS (DoT), Cloudflare DoH |
+| Infra | Cloudflare Workers, GitHub Pages, GoatCounter |
+| Learning | TryHackMe, Professor Messer (Security+) |
+
+---
+
+## Currently
+
+- NextDNS 30-day log review → codex entry
+- Professor Messer — Security+ (SY0-701), target Q1 2027
+- Wazuh home lab (planned Dec 2026)
+
+## Next
+
+- BTL1 (Blue Team Level 1)
+- 2–3 additional Sigma rules
+- Threat actor write-up (MITRE mapped)
+- SOC Tier 1 applications — Q2 2027
+
+---
+
+Started Oct 2026. Zero prior tech background.   
