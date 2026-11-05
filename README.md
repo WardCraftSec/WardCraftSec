@@ -1,4 +1,4 @@
-# Kim (WardCraftSec)
+# WardCraftSec
 
 **Junior blue team analyst. Self-taught. Building everything from a Pixel 7 on GrapheneOS in Termux.**
 
