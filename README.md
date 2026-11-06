@@ -1,8 +1,10 @@
-# WardCraftSec
+# Kim (WardCraftSec)
 
-**Junior blue team analyst. Self-taught. Building everything from a Pixel 7 on GrapheneOS in Termux.**
+Started Oct 2026 with zero tech background. 5 weeks later: live PWA with 4 API endpoints, working Python scripts, a Sigma detection rule, and a documented log review pipeline. Built entirely on a Pixel 7 running GrapheneOS in Termux.
 
-Seeking: Junior SOC / TI roles, UK.
+**Seeking: Junior SOC / TI roles, UK. Fully remote.**
+
+Skills: Sigma, SIEM (Wazuh), Python, threat intelligence, log analysis, MITRE ATT&CK, DNS, IOC enrichment.
 
 ---
 
@@ -10,8 +12,31 @@ Seeking: Junior SOC / TI roles, UK.
 
 | Project | What | Status |
 |---------|------|--------|
-| [Save Me](https://wardcraftsec.github.io/Save-Me/) | Free PWA: guided NextDNS setup + IOC triage (AbuseIPDB, VirusTotal, ipinfo) | ✅ Live |
-| [WardCraft](https://github.com/WardCraftSec/wardcraft) | Blue team scripts, Sigma rules, codex entries, shift-handover docs | 🔄 Active |
+| [Save Me](https://wardcraftsec.github.io/Save-Me/) | Free PWA: guided NextDNS setup + IOC triage. 4 API endpoints, 5 tabs, 200+ lines vanilla JS, Cloudflare Worker backend. Built on Pixel 7 / Termux. | ✅ Live |
+| [WardCraft](https://github.com/WardCraftSec/wardcraft) | Blue team scripts, Sigma rules, codex entries, shift-handover docs, documented log reviews | 🔄 Active |
+
+---
+
+## Sample Detection Rule
+
+```yaml
+title: SSH Brute Force
+status: stable
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4625
+    Status: '0xC000006D'
+  condition: selection
+  timeframe: 5m
+  above: 10
+level: high
+tags:
+  - attack.credential_access
+  - attack.t1110.001
+Full rules: [`sigmas/`](https://github.com/WardCraftSec/wardcraft/tree/main/sigmas)
 
 ---
 
@@ -39,8 +64,4 @@ Seeking: Junior SOC / TI roles, UK.
 - BTL1 (Blue Team Level 1)
 - 2–3 additional Sigma rules
 - Threat actor write-up (MITRE mapped)
-- SOC Tier 1 applications — Q2 2027
-
----
-
-Started Oct 2026. Zero prior tech background.   
+- SOC Tier 1 applications — Q2 2027   
