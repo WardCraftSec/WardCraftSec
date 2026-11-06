@@ -36,6 +36,7 @@ level: high
 tags:
   - attack.credential_access
   - attack.t1110.001
+```
 Full rules: [`sigmas/`](https://github.com/WardCraftSec/wardcraft/tree/main/sigmas)
 
 ---
